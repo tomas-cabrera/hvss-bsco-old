@@ -1,0 +1,13 @@
+Motivation: To have a directory for this project that is easily translatable into a showyourwork repository.  Practically, this means:
+	- Independent directories for "data", "scripts",  and "tex/figures", s.t. a simple copy into "<repo>/src" doesn't break anything.  NOTE: Any matplotlibrc file being used should go in "scripts", not in "utils".
+	- Within "figures", each Python script should map to 1+ figure(s), as per showyourwork convention.
+	- All data analysis steps should be in directories s.t. compilation does not rely on the others.  It's a good idea to make a different directory for each step.
+	- A "utils" directory should exist for project-wide control of paths, file formats, and the like.
+	- See https://show-your.work/en/latest/layout/ for more details.
+
+20221011:
+	Cleaned up with new "hvss" directory (this one), storing old one as "hvss_old_and_complete".
+	All files (including data) were copied from the old directory.
+	NOTE: "corespray" here was cloned fresh, and there seems to have been a significant update to the docs in this version.  Might want to keep the old clone around.
+	TODO: Paths not necessarily updated, so some more cleaning is necessary to make sure everything runs.  I'll try to run everything fresh before finalizing the plots; there's a backup of the data in the old directory.
+	TODO: Figure out what to do with "hvss_utils.py" and "rustics.py" - merge, or specialize with an additional file for the overlap (e.g. CMC model info)?

@@ -1,0 +1,6 @@
+[submodule "cmctoolkit"]
+	path = cmctoolkit
+	url = https://github.com/NicholasRui/cmctoolkit.git
+[submodule "corespray"]
+	path = corespray
+	url = https://github.com/webbjj/corespray.git
